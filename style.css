@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Great Vibes', cursive;
+  overflow: hidden;
+  font-size: 25px;
+}
+
+.intro {
+  position: absolute;
+  inset: 0;
+  background-color: #D1BB9E;
+  color: #6F4E37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: opacity 2s ease, background-color 3s ease;
+  z-index: 10;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 90%;
+}
+
+.intro-content h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #6F4E37;
+  word-wrap: break-word;
+}
+
+#startButton {
+  background: #6F4E37;
+  color: #D1BB9E;
+  border: none;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px #6F4E37;
+  font-family: 'Great Vibes', cursive;
+}
+
+#startButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px #6F4E37;
+}
+
+.countdown {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #6F4E37;
+}
+
+body.rose {
+  background-color: #ff4d9a;
+  transition: background-color 6s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.visible {
